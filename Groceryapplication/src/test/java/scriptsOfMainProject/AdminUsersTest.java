@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import mainProject.TestNGBase;
 import pagesofMainProject.AdminUsersPage;
 import pagesofMainProject.HomePage;
@@ -37,7 +38,7 @@ public class AdminUsersTest extends TestNGBase{
 	    ap.clickNewButton().enterUsername(usname).enterPassword(passwd).selectingFromDropdown().clickingSaveOption();
 	   
 	    boolean actual=ap.verifyWhetherSuccessAlertIsDisplayed();
-	    Assert.assertTrue(actual, "Unable to create new user");
+	    Assert.assertTrue(actual,Constant.ADDNEWADMINUSERSERROR);
 	    
 	}
 	
@@ -60,7 +61,7 @@ public class AdminUsersTest extends TestNGBase{
 	    
 	    String actual=ap.verifyWhetherDataIsDisplayedOnTable();
 	    String expected="sheila.mertz";
-	    Assert.assertEquals(actual, expected,"user not added");
+	    Assert.assertEquals(actual, expected,Constant.SEARCHNEWLYADDEDUSERERROR);
 	    
 	    
 	}

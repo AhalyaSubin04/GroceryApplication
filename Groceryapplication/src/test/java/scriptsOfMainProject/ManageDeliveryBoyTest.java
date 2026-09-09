@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import mainProject.TestNGBase;
 import pagesofMainProject.HomePage;
 import pagesofMainProject.LoginPage;
@@ -40,7 +41,7 @@ public class ManageDeliveryBoyTest extends TestNGBase {
 		md.clickNew().enterName(name1).enterEmailId(mail).enterPhoneNumber(num).enterAddress(add).enterUserName(usname).enterPassword(pass).clickSaveButton();
 		
 	    boolean actual=md.verifyWhetherSuccessAlertIsDisplayed();
-		Assert.assertTrue(actual,"Alert is not dsipalyed");
+		Assert.assertTrue(actual,Constant.ADDNEWDETAILSTODELIVERYBOYERROR);
 		}
 	
 	@Test(description="verify Whether User Is Able To Search The Newly Added Details")
@@ -66,7 +67,7 @@ public class ManageDeliveryBoyTest extends TestNGBase {
 		
 		String actual=md.verifyWhetherPhoneNumberDataIsDisplayedOnTable();
 		String expected="(610) 819-2681";
-		Assert.assertEquals(actual, expected,"Data is not displayed on table");
+		Assert.assertEquals(actual, expected,Constant.SEARCHNEWLYADDEDDETAILSERROR);
 
 	}
 

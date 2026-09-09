@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import mainProject.TestNGBase;
 import pagesofMainProject.HomePage;
 import pagesofMainProject.LoginPage;
@@ -33,7 +34,7 @@ public class ManageNewsTest extends TestNGBase {
 		mn.clickNewButton().entertextonNews(newstoenter).clickSaveButton();
 		
 		boolean actual=mn.verifyWhetherSuccessAlertIsDisplayed();
-		Assert.assertTrue(actual,"Alert is not displayed");
+		Assert.assertTrue(actual,Constant.ADDNEWSTOMANAGENEWSERROR);
 	}
 	
 	@Test(description= "verify The User Is Able To Search The Newly Added News")
@@ -55,7 +56,7 @@ public class ManageNewsTest extends TestNGBase {
 		
 		String actual=mn.verifyWhetherDataIsDisplayedOnTable();
 		String expected="Good Evening";
-		Assert.assertEquals(actual, expected,"Data is not displayed on the table");
+		Assert.assertEquals(actual, expected,Constant.SEARCHNEWLYADDEDNEWSERROR);
 		
 		
 	}

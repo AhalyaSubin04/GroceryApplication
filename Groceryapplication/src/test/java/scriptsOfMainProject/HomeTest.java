@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import mainProject.TestNGBase;
 import pagesofMainProject.HomePage;
 import pagesofMainProject.LoginPage;
@@ -28,7 +29,7 @@ public class HomeTest extends TestNGBase {
 		
 		String actual=hp.verifylogintextisDisplayed();
 		String expected="7rmart supermarket";
-		Assert.assertEquals(actual, expected,"User is unable to logout");
+		Assert.assertEquals(actual, expected,Constant.LOGOUTFROMHOMEPAGEERROR);
 
 	}
 	

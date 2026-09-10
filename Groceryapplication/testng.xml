@@ -7,9 +7,9 @@
   <parameter name="browsers" value="Chrome"></parameter>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="scriptsOfMainProject.HomeTest">
+			<class name="scriptsOfMainProject.AdminUsersTest">
 				<methods> 
-					<include name="verifyWhetherTheUserIsAbleToLogOutSuccessfully"></include>
+					<include name="verifyWhetherTheUserIsAbleToAddNewAdminUsers"></include>
 					
 				</methods>
 			</class>

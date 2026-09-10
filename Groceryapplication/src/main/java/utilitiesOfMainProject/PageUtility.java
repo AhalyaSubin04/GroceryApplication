@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class PageUtility {
 	public WebDriver driver;
 	
-	public void selectDragDropWithValue(WebElement element, String value)
+	public void selectDropDownWithValue(WebElement element, String value)
 	{
 
 		Select object=new Select(element);
@@ -59,6 +59,19 @@ public class PageUtility {
 		
 		act.moveToElement(element).build().perform();
 	}
+	public void doubleClickAction(WebElement element)
+	{
+		Actions act=new Actions(driver);
+		
+		act.doubleClick(element).build().perform();
+	}
+	public void dragAndDropAction(WebElement element1,WebElement element2)
+	{
+		Actions act=new Actions(driver);
+		
+		act.dragAndDrop(element1, element2).build().perform();
+	}
+	
 
 }
 

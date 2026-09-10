@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Eclipse\Groceryapplication\testng.xml</span>
+                    <span>C:\Users\nairs\git\GroceryApplication\Groceryapplication\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="scriptsOfMainProject.HomeTest" class="method navigator-link" hash-for-method="verifyWhetherTheUserIsAbleToLogOutSuccessfully">verifyWhetherTheUserIsAbleToLogOutSuccessfully</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="scriptsOfMainProject.AdminUsersTest" class="method navigator-link" hash-for-method="verifyWhetherTheUserIsAbleToAddNewAdminUsers">verifyWhetherTheUserIsAbleToAddNewAdminUsers</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,16 +121,16 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">scriptsOfMainProject.HomeTest</span>
+              <span class="class-name">scriptsOfMainProject.AdminUsersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyWhetherTheUserIsAbleToLogOutSuccessfully">
-                  </a> <!-- verifyWhetherTheUserIsAbleToLogOutSuccessfully -->
-                  <span class="method-name">verifyWhetherTheUserIsAbleToLogOutSuccessfully</span>
+                  <a name="verifyWhetherTheUserIsAbleToAddNewAdminUsers">
+                  </a> <!-- verifyWhetherTheUserIsAbleToAddNewAdminUsers -->
+                  <span class="method-name">verifyWhetherTheUserIsAbleToAddNewAdminUsers</span>
                   <em>
-(verify Whether The User Is Able To LogOut Successfully)                  </em>
+(verify Whether The User Is Able To Add New AdminUsers)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +138,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Eclipse\Groceryapplication\testng.xml</span>
+            <span class="header-content">C:\Users\nairs\git\GroceryApplication\Groceryapplication\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -151,11 +151,11 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;scriptsOfMainProject.HomeTest&quot;&gt;
+      &lt;class name=&quot;scriptsOfMainProject.AdminUsersTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyWhetherTheUserIsAbleToLogOutSuccessfully&quot;/&gt;
+          &lt;include name=&quot;verifyWhetherTheUserIsAbleToAddNewAdminUsers&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- scriptsOfMainProject.HomeTest --&gt;
+      &lt;/class&gt; &lt;!-- scriptsOfMainProject.AdminUsersTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -197,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyWhetherTheUserIsAbleToLogOutSuccessfully')
-data.setCell(0, 2, 'scriptsOfMainProject.HomeTest')
-data.setCell(0, 3, 4370);
+data.setCell(0, 1, 'verifyWhetherTheUserIsAbleToAddNewAdminUsers')
+data.setCell(0, 2, 'scriptsOfMainProject.AdminUsersTest')
+data.setCell(0, 3, 5165);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -219,9 +219,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">scriptsOfMainProject.AdminUsersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyTheUserIsAbleToSearchTheNewlyAddedUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -230,18 +237,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">scriptsOfMainProject.HomeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">scriptsOfMainProject.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyWhetherTheUserIsAbleToLogOutSuccessfully</span>
-                <span class="method-start">15209 ms</span>
+                <span class="method-name">verifyWhetherTheUserIsAbleToAddNewAdminUsers</span>
+                <span class="method-start">26323 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyWhetherTheUserIsAbleToLogOutSuccessfully status=SUCCESS method=HomeTest.verif...)</span>
-                <span class="method-start">19589 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyWhetherTheUserIsAbleToAddNewAdminUsers status=SUCCESS method=AdminUsersTest.v...)</span>
+                <span class="method-start">31495 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

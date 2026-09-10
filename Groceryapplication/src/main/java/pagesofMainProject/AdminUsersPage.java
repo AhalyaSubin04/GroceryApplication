@@ -53,7 +53,7 @@ public class AdminUsersPage {
 	}
 	public AdminUsersPage selectingFromDropdown()
 	{
-		pu.selectDragDropWithValue(userType, "admin");
+		pu.selectDropDownWithValue(userType, "admin");
 		return this;
 		//Select utype=new Select(userType);
 		//utype.selectByValue("admin");

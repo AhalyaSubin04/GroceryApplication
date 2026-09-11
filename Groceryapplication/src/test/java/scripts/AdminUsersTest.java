@@ -1,4 +1,4 @@
-package scriptsOfMainProject;
+package scripts;
 
 import java.io.IOException;
 
@@ -7,11 +7,11 @@ import org.testng.annotations.Test;
 
 import constant.Constant;
 import mainProject.TestNGBase;
-import pagesofMainProject.AdminUsersPage;
-import pagesofMainProject.HomePage;
-import pagesofMainProject.LoginPage;
-import utilitiesOfMainProject.ExcelUtilitiesMain;
-import utilitiesOfMainProject.RandomDataUtility;
+import pages.AdminUsersPage;
+import pages.HomePage;
+import pages.LoginPage;
+import utilities.ExcelUtilitiesMain;
+import utilities.RandomDataUtility;
 
 public class AdminUsersTest extends TestNGBase{
 	 HomePage hp;

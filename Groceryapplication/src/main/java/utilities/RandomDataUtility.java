@@ -1,4 +1,4 @@
-package utilitiesOfMainProject;
+package utilities;
 
 import com.github.javafaker.Faker;
 

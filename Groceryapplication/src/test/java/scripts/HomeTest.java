@@ -1,4 +1,4 @@
-package scriptsOfMainProject;
+package scripts;
 
 import java.io.IOException;
 
@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 import constant.Constant;
 import mainProject.TestNGBase;
-import pagesofMainProject.HomePage;
-import pagesofMainProject.LoginPage;
-import utilitiesOfMainProject.ExcelUtilitiesMain;
+import pages.HomePage;
+import pages.LoginPage;
+import utilities.ExcelUtilitiesMain;
 
 public class HomeTest extends TestNGBase {
 	HomePage hp;

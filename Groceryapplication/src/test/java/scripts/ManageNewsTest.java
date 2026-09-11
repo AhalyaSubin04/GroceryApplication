@@ -1,4 +1,4 @@
-package scriptsOfMainProject;
+package scripts;
 
 import java.io.IOException;
 
@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 
 import constant.Constant;
 import mainProject.TestNGBase;
-import pagesofMainProject.HomePage;
-import pagesofMainProject.LoginPage;
-import pagesofMainProject.ManageNewsPage;
-import utilitiesOfMainProject.ExcelUtilitiesMain;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.ManageNewsPage;
+import utilities.ExcelUtilitiesMain;
 
 public class ManageNewsTest extends TestNGBase {
 	

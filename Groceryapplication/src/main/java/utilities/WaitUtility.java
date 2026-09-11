@@ -1,4 +1,4 @@
-package utilitiesOfMainProject;
+package utilities;
 
 import java.time.Duration;
 

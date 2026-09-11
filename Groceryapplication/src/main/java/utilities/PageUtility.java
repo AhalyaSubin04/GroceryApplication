@@ -1,4 +1,4 @@
-package utilitiesOfMainProject;
+package utilities;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
